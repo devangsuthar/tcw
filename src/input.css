@@ -63,8 +63,6 @@
     font-display: swap;
 }
 
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -77,4 +75,8 @@ body {
     background-color: #fef3c7;
     padding: 1rem;
     border-radius: 0.5rem;
+}
+
+.banner-section {
+    background-image: linear-gradient(120deg, #f56c2448, #FFF, #ffffff48, #ffffff48, #f56c2448, #fff);
 }

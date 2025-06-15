@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Test</title>
-    <link rel="stylesheet" href="/dist/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container mx-auto">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradeCrews.com</title>
+  <link rel="stylesheet" href="/dist/style.css" />
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menu-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="py-6 px-5 absolute top-0 left-0 right-0 z-10">
+    <div class="container mx-auto">
+      <div class="flex justify-between items-center">
         <div class="site-logo">
-          <img src="/assets/logo.svg" alt="logo" />
+          <a href="#"><img src="/src/assets/logo.svg" alt="logo" /></a>
         </div>
+
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+
+        <nav id="nav-menu"
+          class="hidden absolute top-[72px] md:z-0 h-screen md:h-auto z-[9] left-0 w-full bg-white shadow-md py-4 md:shadow-none md:static md:flex md:items-center md:gap-x-8 md:w-auto md:bg-transparent">
+          <ul class="flex flex-col gap-y-4 md:flex-row md:gap-x-8 md:items-center">
+            <li><a href="#" class="text-[#0D0D0D] tracking-wide hover:text-primary">About Tradecrews</a></li>
+            <li><a href="#" class="text-[#0D0D0D] tracking-wide hover:text-primary">How It Works</a></li>
+          </ul>
+          <div class="mt-4 md:mt-0 md:ml-6">
+            <button type="button"
+              class="bg-primary text-white tracking-wide px-6 py-[10px] hover:bg-theme_color rounded-md">
+              Sign Up
+            </button>
+          </div>
+        </nav>
       </div>
-    </header>
-    <main class="wrapper">
-      <section class="banner-section py-5">
-        <div class="container mx-auto">
-          <h1 class="text-6xl font-aileron font-extrabold">Demo</h1>
-          <p>
-            Our platform simplifies finding and hiring qualified trade
-            professionals. With verified contractors, transparent bidding, and
-            comprehensive project management tools, you can focus on what
-            matters - getting the job done right.
-          </p>
+    </div>
+  </header>
+  <main class="wrapper">
+    <section class="banner-section bg-opacity-100 backdrop-blur-[50px] pt-32 py-10">
+      <div class="container mx-auto">
+        <div class="flex md:gap-24 gap-12">
+          <div class="w-2/3 banner-content">
+            <h1 class="py-6 text-6xl font-aileron font-black leading-tight">Transform Your <br>Home withTrusted
+              Professionals</h1>
+            <p class="text-xl">Our platform simplifies finding and hiring qualified trade professionals. With verified
+              contractors,
+              transparent bidding, and comprehensive project management tools, you can focus on what matters - getting
+              the job done right.</p>
+            <div class="boxes my-3 mt-6 grid grid-cols-3 gap-3">
+              <div class="icon-box text-center">
+                <img src="assets/Verified.svg" alt="verified" class="w-24 mb-2 mx-auto">
+                <h4 class="text-lg tracking-wider">Verified Professionals</h4>
+              </div>
+              <div class="icon-box text-center">
+                <img src="assets/Competitive.svg" alt="Competitive" class="w-24 mb-2 mx-auto">
+                <h4 class="text-lg tracking-wider">Competitive quotes</h4>
+              </div>
+              <div class="icon-box text-center">
+                <img src="assets/Secure.svg" alt="Secure" class="w-24 mb-2 mx-auto">
+                <h4 class="text-lg tracking-wider">Secure payments</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-2/4">
+            <div class="text-end">
+              <img src="assets/banner.jpg" alt="banner" class="rounded-3xl w-full">
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-  </body>
+        </h1>
+      </div>
+    </section>
+    <section class="mt-6">
+      <div class="container">
+        <h2 class="text-5xl font-bold text-center">Everything you need to hire the right professional</h2>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
