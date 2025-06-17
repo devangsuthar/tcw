@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 35" width="46" height="35">
+	<title>Folder 1</title>
+	<style>
+		.s0 { fill: #00377c } 
+		.s1 { fill: #ff5000 } 
+		.s2 { fill: #f88742 } 
+		.s3 { fill: #ef5214 } 
+		.s4 { fill: #2f4f9d } 
+	</style>
+	<g id="Folder 1">
+		<path id="Path_1" class="s0" d="m23.7 0l-10.9 2.2-5.9 1.2-6.9 1.4v6.3l6.9-0.6v20.5l5.9 1.4v-22.5l10.9-1z"/>
+		<path id="Path_2" class="s1" d="m23.7 8.9z"/>
+		<path id="Path_3" class="s2" d="m23.7 0v8.9l6.5 0.6v-8.2z"/>
+		<path id="Path_4" class="s3" d="m45.9 18.1v-5.9l-4.5-0.3-9.5-0.8v21.8l9.5-2.1 4.5-1.1v-6.8l-3.3 0.4v2.7l-1.2 0.2-4.9 0.8v-12l4.9 0.1h1.2v3z"/>
+		<path id="Path_5" class="s4" d="m14.7 11.1v21.7l9 2v-24.3z"/>
+		<path id="Path_6" class="s4" d="m0 12.7v16.8l5.7 1.3v-18.4z"/>
+		<path id="Path_7" class="s2" d="m23.7 34.8l6.5-1.5v-22.3l-6.5-0.5z"/>
+		<path id="Path_8" class="s2" d="m41.4 3.6l-9.5-1.9v7.9l9.5 0.9 4.5 0.3v-6.3z"/>
+	</g>
+</svg>
